@@ -22,6 +22,7 @@ class Ball {
     /** The color of the outside of the ball */
     private int borderColor;
 
+    
     /** Empty constructor to keep the defaults. Only sets up our link. */
     public Ball(Sketch sketch) {
         s = sketch;
