@@ -72,7 +72,9 @@ public class Sketch extends PApplet {
         snowflake3.setColors(color(164, 228, 241)); 
 
         snowflake4 = new Snowflake(this, random(1, 40), random(0, 500), random(0, 500), random(1, -10), random(1, -10));
-        snowflake4.setColors(color(random (0, 255), random(0, 225), random(0, 255))); 
+        snowflake4.setColors(color(random (128, 255), random(128, 225), random(128, 255))); 
+
+
 
     }
 
@@ -126,7 +128,24 @@ public class Sketch extends PApplet {
 
         snowflake4.move(); 
         snowflake4.draw(); 
+        
+    }
 
+    // EVENT VS POLLING BASED 
+    // I made a new method so that it would be Event based rather than polling based, this way, the color does not glitch out everytime the keys are pressed
+    public void keyPressed() {
+        if (key == '1'){
+            ball1.setColors(color(random (0, 255), random(0, 225), random(0, 255)), color(random (0, 255), random(0, 225), random(0, 255))); 
+            }   
+        if (key == '2'){
+            ball2.setColors(color(random (0, 255), random(0, 225), random(0, 255)), color(random (0, 255), random(0, 225), random(0, 255))); 
+        }
+        if (key == '3'){
+            ball3.setColors(color(random (0, 255), random(0, 225), random(0, 255)), color(random (0, 255), random(0, 225), random(0, 255))); 
+        } 
+        if (key == '4'){
+            ball4.setColors(color(random (0, 255), random(0, 225), random(0, 255)), color(random (0, 255), random(0, 225), random(0, 255))); 
+        }
     }
 
     /** All processing sketches have to use this main method. Don't touch this! */
