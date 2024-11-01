@@ -14,6 +14,14 @@ public class Sketch extends PApplet {
     private Bubble bubble3; 
     private Bubble bubble4; 
 
+    // SNOWFLAKES
+
+    private Snowflake snowflake1; 
+    private Snowflake snowflake2; 
+    private Snowflake snowflake3; 
+    private Snowflake snowflake4; 
+
+
 
     /**
      * This method can only be used to change the window size. It runs before the
@@ -53,6 +61,19 @@ public class Sketch extends PApplet {
 
         bubble4 = new Bubble (this, random(1, 50), random(0, 500), random(0, 500), random(1, 6), -random(1, 6));
         bubble4.setColors(0x00ffffff, 0); 
+
+    // SNOWFLAKES 
+        snowflake1 = new Snowflake (this); 
+
+        snowflake2 = new Snowflake (this, 25, 62, 380, -1, 2); 
+        snowflake2.setColors(color(241, 164, 238)); 
+
+        snowflake3 = new Snowflake (this, 52, 200, 400, -2, -2); 
+        snowflake3.setColors(color(164, 228, 241)); 
+
+        snowflake4 = new Snowflake(this, random(1, 40), random(0, 500), random(0, 500), random(1, -10), random(1, -10));
+        snowflake4.setColors(color(random (0, 255), random(0, 225), random(0, 255))); 
+
     }
 
     
@@ -91,6 +112,20 @@ public class Sketch extends PApplet {
 
         bubble4.move(); 
         bubble4.draw(); 
+
+    // SNOWFLAKES
+
+        snowflake1.move(); 
+        snowflake1.draw(); 
+
+        snowflake2.move(); 
+        snowflake2.draw(); 
+
+        snowflake3.move(); 
+        snowflake3.draw(); 
+
+        snowflake4.move(); 
+        snowflake4.draw(); 
 
     }
 
