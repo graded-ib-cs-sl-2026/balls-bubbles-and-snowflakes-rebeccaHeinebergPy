@@ -45,13 +45,13 @@ public class Sketch extends PApplet {
     // BUBBLES
         bubble1 = new Bubble (this); 
 
-        bubble2 = new Bubble (this, 10, 2, 30, 5, 10); 
+        bubble2 = new Bubble (this, 10, 2, 30, 5, -10); 
         bubble2.setColors(0x00ffffff, 0); 
 
-        bubble3 = new Bubble (this, 45, 499, 64, 1, 2); 
+        bubble3 = new Bubble (this, 45, 499, 64, 1, -2); 
         bubble3.setColors(0x00ffffff, 0); 
 
-        bubble4 = new Bubble (this, random(1, 50), random(0, 500), random(0, 500), random(1, 6), random(1, 6));
+        bubble4 = new Bubble (this, random(1, 50), random(0, 500), random(0, 500), random(1, 6), -random(1, 6));
         bubble4.setColors(0x00ffffff, 0); 
     }
 
