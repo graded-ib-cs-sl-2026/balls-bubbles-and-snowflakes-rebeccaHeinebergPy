@@ -1,10 +1,10 @@
 
 class Bubble {
 
-    //MISSING MANY INSTANCE VARIABLES
+    //INSTANCE VARIABLES, used Ball.java for reference
     private Sketch s;
     /** the radius of the bubble */
-    private float radius;
+    private float radius; // Floats are better for holding values like speed and coordiantes since they can be decimals. 
     private float x;
     private float y;
     /** The number of pixels the bubbles moves right per frame */
@@ -24,7 +24,7 @@ class Bubble {
         y = 100;
         xSpeed = 2;
         ySpeed = -1;
-        fillColor = 0x00ffffff;
+        fillColor = 0x00ffffff; 
         borderColor = s.color(0, 0, 0);
     }
 

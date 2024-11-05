@@ -45,6 +45,7 @@ public class Sketch extends PApplet {
     public void setup() {
 
         // BALLS:
+            //Picks any number between both of the options I gave it
         ball1 = new Ball(this, random(1, 40), random(0, 500), random(0, 500), random(1, 10), random(1, 10));
         ball1.setColors(color(random(0, 255), random(0, 225), random(0, 255)),
                 color(random(0, 255), random(0, 225), random(0, 255)));
@@ -63,6 +64,7 @@ public class Sketch extends PApplet {
 
         bubble2 = new Bubble(this, 10, 2, 30, 5, -10);
         bubble2.setColors(0x00ffffff, 0);
+        // Hex color, its equal to transparent since bubbles are transparent 
 
         bubble3 = new Bubble(this, 45, 499, 64, 1, -2);
         bubble3.setColors(0x00ffffff, 0);
@@ -75,12 +77,14 @@ public class Sketch extends PApplet {
 
         snowflake2 = new Snowflake(this, 25, 62, 380, -1, 2);
         snowflake2.setColors(color(241, 164, 238));
+        //I only need to call one int since this only has border color and not fill color 
 
         snowflake3 = new Snowflake(this, 52, 200, 400, -2, -2);
         snowflake3.setColors(color(164, 228, 241));
 
         snowflake4 = new Snowflake(this, random(1, 40), random(0, 500), random(0, 500), random(1, -10), random(1, -10));
         snowflake4.setColors(color(random(128, 255), random(128, 225), random(128, 255)));
+        // I made the colors between 128 and 255 so that they would be more pastel 
 
         // NEW OBJECT
 
@@ -89,6 +93,7 @@ public class Sketch extends PApplet {
         newobject2 = new Newobject(this, random(1, 50), random(20, 480), random(20, 480), random(1, -10), random(1, 10),
                 random(1, 10), 1);
          newobject2.setColors(color(180, 180, 255, 0));
+            // I set the color off the rest of the stars to transparent so that you can make them appear later on 
 
         newobject3 = new Newobject(this, random(1, 50), random(20, 480), random(20, 480), random(1, -10), random(1, 10),
                 random(1, 10), 1);
@@ -115,8 +120,6 @@ public class Sketch extends PApplet {
      */
     public void draw() {
         background(180, 180, 255);
-
-        // BEHAVIORS
         // BALLS
         ball1.move();
         ball1.draw();
@@ -131,7 +134,6 @@ public class Sketch extends PApplet {
         ball4.draw();
 
         // BUBBLES
-
         bubble1.move();
         bubble1.draw();
 
@@ -145,7 +147,6 @@ public class Sketch extends PApplet {
         bubble4.draw();
 
         // SNOWFLAKES
-
         snowflake1.move();
         snowflake1.draw();
 
@@ -159,7 +160,6 @@ public class Sketch extends PApplet {
         snowflake4.draw();
 
         // NEW OBJECT
-
         newobject1.draw();
         newobject1.move();
 

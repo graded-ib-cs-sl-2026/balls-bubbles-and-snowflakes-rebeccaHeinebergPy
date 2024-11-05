@@ -1,5 +1,5 @@
 public class Newobject {
-     //MISSING MANY INSTANCE VARIABLES
+     // INSTANCE VARIABLES
      private Sketch s;
      /** the radius of the star */
      private float radius;
@@ -14,6 +14,7 @@ public class Newobject {
      /** The the spinning */
      private float rotate = 0; 
      private float rotateSpeed = 1; 
+     // New instace variables so that the star will spin
  
      //MISSING CONSTRUCTORS
      public Newobject(Sketch sketch) {
@@ -27,7 +28,6 @@ public class Newobject {
      }
  
      /** Fully specified constructor to allow changes to size, position, speed */
-     /** Does NOT allow changing color! Need to use setColors() for that. */
      public Newobject(Sketch sketch, float radius, float x, float y, float xspeed, float yspeed, float rotate, float rotateSpeed) {
          this.s = sketch;
          this.radius = radius;
@@ -75,8 +75,7 @@ public class Newobject {
         for (int i = 0; i < 5; i++) {
             xPoints[i] = x + radius * (float) Math.cos(i * angle+ Sketch.radians(rotate));
             yPoints[i] = y - radius * (float) Math.sin(i * angle + Sketch.radians(rotate));
-/* */
-
+/* To rotate the star I am redrawing the points to be at different angles each frame */
         }
 
 

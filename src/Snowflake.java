@@ -13,6 +13,7 @@ class Snowflake {
     private float ySpeed;
     /** The color of the outside of the snowflake */
     private int borderColor;
+    // In this class the fill color is not called because it doesnt have a fill color, only border. 
 
     //MISSING CONSTRUCTORS
     public Snowflake(Sketch sketch) {
@@ -23,6 +24,7 @@ class Snowflake {
         xSpeed = -1;
         ySpeed = 2;
         borderColor = s.color(255, 255, 255);
+    
     }
 
     /** Fully specified constructor to allow changes to size, position, speed */
