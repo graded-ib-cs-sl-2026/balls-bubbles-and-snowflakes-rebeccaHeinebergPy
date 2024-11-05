@@ -78,6 +78,7 @@ class Ball {
         s.stroke(borderColor);
         s.fill(fillColor);
         s.circle(x, y, radius * 2);
+        
     }
 
     /**
