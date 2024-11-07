@@ -15,7 +15,7 @@ class Snowflake {
     private int borderColor;
     // In this class the fill color is not called because it doesnt have a fill color, only border. 
 
-    //MISSING CONSTRUCTORS
+    //CONSTRUCTORS
     public Snowflake(Sketch sketch) {
         s = sketch;
         radius = 40;

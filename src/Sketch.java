@@ -23,12 +23,12 @@ public class Sketch extends PApplet {
 
     // NEW OBJECT
 
-    private Newobject newobject1;
-    private Newobject newobject2;
-    private Newobject newobject3;
-    private Newobject newobject4;
-    private Newobject newobject5;
-    private Newobject newobject6;
+    private Star star1;
+    private Star star2;
+    private Star star3;
+    private Star star4;
+    private Star star5;
+    private Star star6;
 
     /**
      * This method can only be used to change the window size. It runs before the
@@ -88,28 +88,28 @@ public class Sketch extends PApplet {
 
         // NEW OBJECT
 
-        newobject1 = new Newobject(this);
+        star1 = new Star(this);
 
-        newobject2 = new Newobject(this, random(1, 50), random(20, 480), random(20, 480), random(1, -10), random(1, 10),
+        star2 = new Star(this, random(1, 50), random(20, 480), random(20, 480), random(1, -10), random(1, 10),
                 random(1, 10), 1);
-         newobject2.setColors(color(180, 180, 255, 0));
+         star2.setColors(color(180, 180, 255, 0));
             // I set the color off the rest of the stars to transparent so that you can make them appear later on 
 
-        newobject3 = new Newobject(this, random(1, 50), random(20, 480), random(20, 480), random(1, -10), random(1, 10),
+        star3 = new Star(this, random(1, 50), random(20, 480), random(20, 480), random(1, -10), random(1, 10),
                 random(1, 10), 1);
-        newobject3.setColors(color(180, 180, 255, 0));
+        star3.setColors(color(180, 180, 255, 0));
 
-        newobject4 = new Newobject(this, random(1, 50), random(20, 480), random(20, 480), random(1, -10), random(1, 10),
+        star4 = new Star(this, random(1, 50), random(20, 480), random(20, 480), random(1, -10), random(1, 10),
                 random(1, 10), 1);
-        newobject4.setColors(color(180, 180, 255, 0));
+        star4.setColors(color(180, 180, 255, 0));
 
-        newobject5 = new Newobject(this, random(1, 50), random(20, 480), random(20, 480), random(1, -10), random(1, 10),
+        star5 = new Star(this, random(1, 50), random(20, 480), random(20, 480), random(1, -10), random(1, 10),
                 random(1, 10), 1);
-        newobject5.setColors(color(180, 180, 255));
+        star5.setColors(color(180, 180, 255));
 
-        newobject6 = new Newobject(this, random(1, 50), random(20, 480), random(20, 480), random(1, -10), random(1, 10),
+        star6 = new Star(this, random(1, 50), random(20, 480), random(20, 480), random(1, -10), random(1, 10),
                 random(1, 10), 1);
-        newobject6.setColors(color(180, 180, 255, 0));
+        star6.setColors(color(180, 180, 255, 0));
 
     }
 
@@ -160,23 +160,23 @@ public class Sketch extends PApplet {
         snowflake4.draw();
 
         // NEW OBJECT
-        newobject1.draw();
-        newobject1.move();
+        star1.draw();
+        star1.move();
 
-        newobject2.draw();
-        newobject2.move();
+        star2.draw();
+        star2.move();
 
-        newobject3.draw();
-        newobject3.move();
+        star3.draw();
+        star3.move();
 
-        newobject4.draw();
-        newobject4.move();
+        star4.draw();
+        star4.move();
 
-        newobject5.draw();
-        newobject5.move();
+        star5.draw();
+        star5.move();
 
-        newobject6.draw();
-        newobject6.move();
+        star6.draw();
+        star6.move();
 
     }
 
@@ -201,23 +201,23 @@ public class Sketch extends PApplet {
                     color(random(0, 255), random(0, 225), random(0, 255)));
         }
         if (key == 'a') {
-            newobject2.setColors(color(random(0, 255), random(0, 225), random(0, 255)));
+            star2.setColors(color(random(0, 255), random(0, 225), random(0, 255)));
 
         }
         if (key == 'b') {
-            newobject3.setColors(color(random(0, 255), random(0, 225), random(0, 255)));
+            star3.setColors(color(random(0, 255), random(0, 225), random(0, 255)));
 
         }
         if (key == 'c') {
-            newobject4.setColors(color(random(0, 255), random(0, 225), random(0, 255)));
+            star4.setColors(color(random(0, 255), random(0, 225), random(0, 255)));
 
         }
         if (key == 'd') {
-            newobject5.setColors(color(random(0, 255), random(0, 225), random(0, 255)));
+            star5.setColors(color(random(0, 255), random(0, 225), random(0, 255)));
 
         }
         if (key == 'e') {
-            newobject6.setColors(color(random(0, 255), random(0, 225), random(0, 255)));
+            star6.setColors(color(random(0, 255), random(0, 225), random(0, 255)));
 
         }
     }

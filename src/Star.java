@@ -1,4 +1,4 @@
-public class Newobject {
+public class Star {
      // INSTANCE VARIABLES
      private Sketch s;
      /** the radius of the star */
@@ -17,7 +17,7 @@ public class Newobject {
      // New instace variables so that the star will spin
  
      //MISSING CONSTRUCTORS
-     public Newobject(Sketch sketch) {
+     public Star(Sketch sketch) {
          s = sketch;
          radius = 30;
          x = 100;
@@ -28,7 +28,7 @@ public class Newobject {
      }
  
      /** Fully specified constructor to allow changes to size, position, speed */
-     public Newobject(Sketch sketch, float radius, float x, float y, float xspeed, float yspeed, float rotate, float rotateSpeed) {
+     public Star(Sketch sketch, float radius, float x, float y, float xspeed, float yspeed, float rotate, float rotateSpeed) {
          this.s = sketch;
          this.radius = radius;
          this.x = x;
